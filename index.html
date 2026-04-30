@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="dna-bg" aria-hidden="true"></canvas>
+
+    <header class="topbar">
+      <div class="logo">DEV PORTFOLIO</div>
+      <nav>
+        <a href="#home" data-i18n="navHome">홈</a>
+        <a href="#plugins" data-i18n="navPlugins">개발한 플러그인</a>
+        <a href="#career" data-i18n="navCareer">경력</a>
+      </nav>
+      <button id="lang-toggle" class="lang-btn" type="button" aria-label="Switch language">
+        EN
+      </button>
+    </header>
+
+    <main>
+      <section id="home" class="hero fade-in">
+        <p class="eyebrow" data-i18n="eyebrow">ROBLOX DEV STYLE PORTFOLIO</p>
+        <h1 data-i18n="heroTitle">게임/툴 개발자 포트폴리오</h1>
+        <p class="hero-text" data-i18n="heroText">
+          어두운 테마와 네온 포인트를 기반으로, 제가 만든 플러그인과 경력을 한눈에 볼 수 있도록 구성했습니다.
+          부드러운 스크롤 애니메이션과 DNA 나선형 3D 배경으로 역동적인 느낌을 더했습니다.
+        </p>
+        <a class="primary-btn" href="#plugins" data-i18n="heroCta">플러그인 보기</a>
+      </section>
+
+      <section id="plugins" class="section fade-in">
+        <h2 data-i18n="featureTitle">개발한 플러그인</h2>
+        <div class="feature-grid">
+          <article class="card">
+            <h3 data-i18n="f1Title">빌드 자동화 플러그인</h3>
+            <p data-i18n="f1Desc">반복 작업을 줄이기 위해 배포/패키징 과정을 한 번에 처리하는 자동화 도구입니다.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="f2Title">UI 생산성 플러그인</h3>
+            <p data-i18n="f2Desc">컴포넌트 템플릿과 레이아웃 스냅 기능을 제공해 UI 제작 속도를 높입니다.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="f3Title">디버그 도우미 플러그인</h3>
+            <p data-i18n="f3Desc">실행 로그와 상태 추적 패널을 통해 문제 원인을 빠르게 찾을 수 있습니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section fade-in" id="pricing">
+        <h2 data-i18n="pricingTitle">Pricing</h2>
+        <div class="pricing-grid">
+          <article class="price-card">
+            <h3 data-i18n="p1Title">Paid Plugin</h3>
+            <p class="price">$49</p>
+            <ul>
+              <li data-i18n="p1i1">1회 구매 / 평생 업데이트</li>
+              <li data-i18n="p1i2">기술 지원 포함</li>
+              <li data-i18n="p1i3">문서 및 예제 프로젝트 제공</li>
+            </ul>
+          </article>
+          <article class="price-card">
+            <h3 data-i18n="p2Title">Commission</h3>
+            <p class="price" data-i18n="p2Price">협의</p>
+            <ul>
+              <li data-i18n="p2i1">맞춤 기능 설계 및 개발</li>
+              <li data-i18n="p2i2">주간 진행 보고</li>
+              <li data-i18n="p2i3">출시 후 안정화 지원</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="career" class="section fade-in">
+        <h2 data-i18n="careerTitle">경력</h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span>2022 - Present</span>
+            <h3 data-i18n="c1Title">프리랜스 툴/플러그인 개발자</h3>
+            <p data-i18n="c1Desc">게임 제작 파이프라인 개선을 위한 플러그인 개발 및 유지보수 진행.</p>
+          </article>
+          <article class="timeline-item">
+            <span>2020 - 2022</span>
+            <h3 data-i18n="c2Title">인디 게임 팀 클라이언트 개발</h3>
+            <p data-i18n="c2Desc">UI, 상호작용, 디버깅 도구를 담당하며 사용자 경험 개선에 기여.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
